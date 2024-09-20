@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraduría General De La Nación</title>
+</head> 
+<body>
+    <h1>Registraduría General De La Nación</h1>
+    
+    <form action="#" method="post">
+
+        <!-- Nombre  -->
+        <p>Nombre Completo: <input type="text" placeholder="Nombre" required name="nombre"></p>
+        
+        <!-- Apellidos  -->
+        <p>Apellidos Completos: <input type="text" placeholder="Apellidos" name="apellidos" size="20"></p>
+
+        <!-- Nombre del tutor -->
+        <p>Nombre Tutor de Niñ@: <input type="text" placeholder="Nombre" required name="nombre"></p>
+        
+        <!-- Apellidos del tutor -->
+        <p>Apellidos Tutor de Niñ@: <input type="text" placeholder="Apellidos" name="apellidos" size="20"></p>
+        
+        <!-- Localidad -->
+        <p>Localidad (Barrio): <input type="text" placeholder="Localidad" name="localidad" size="20" minlength="2"></p>
+
+        <!-- Sexo -->
+        <p>Sexo: 
+            Hombre <input type="radio" name="sexo" value="h"> 
+            Mujer <input type="radio" name="sexo" value="m">
+        </p>
+
+        <!-- Cantidad -->
+        <p>Cantidad: <input type="number" name="cantidad" step="1"></p>
+
+        <!-- Edad -->
+        <p>Edad: <input type="number" name="edad" min="18" max="65" placeholder="18-65"></p>
+
+        <!-- Teléfono -->
+        <p>Teléfono: <input type="number" name="telefono" placeholder="+57"></p>
+
+        <!-- Email -->
+        <p>Email: <input type="text" name="Email" placeholder="Email"></p>
+
+        <!-- Tipos de sangre -->
+        <h2>Tipos de Sangre</h2>
+        <p>Tipo de Sangre: 
+            <input list="ListSan" name="tipoSangre">
+            <datalist id="ListSan">
+                <option value="O+"></option>
+                <option value="O-"></option>
+                <option value="A+"></option>
+                <option value="A-"></option>
+            </datalist>
+        </p>
+
+
+    <!-- Lista de recursos -->
+    <h2>Extensiones</h2>
+    <ol>
+        <li>Introducción Genially</li>
+        <li>Chat GPT</li>
+        <li>YouTube</li>
+    </ol>
+
+    <!-- Enlaces -->
+    <p>
+        <a href="https://view.genially.com/66c07ca5c2879f853a4607bb/interactive-image-multimedia-en-html">Introducción Genially</a><br>
+        <a href="https://chatgpt.com/">Chat GPT</a><br>
+        <a href="https://www.youtube.com/">YouTube</a>
+    </p>
+
+    <!-- Botón de envío -->
+    <p><input type="submit" value="Enviar"></p>
+</form>
+</body>
+</html>
